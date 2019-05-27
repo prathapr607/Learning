@@ -1,6 +1,6 @@
 <?php
 session_start();
-print_r($_SESSION);
+ // print_r($_SERVER);
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,18 +10,18 @@ print_r($_SESSION);
 <p>welcome <?php echo $_SESSION['uname']; ?>! </p>
 <body>
 
-<a href="user_update.php">Edit profile<?php echo "<br><br>"; ?>
+<?php
+$route = 'user_update.php';
+if(1 === (int) $_SESSION[ 'id' ]){
+	$route = 'user_list.php';
+} else {
+	$route = 'user_list.php';
+}
+?>
+<a href="<?php echo $route; ?>">Edit profile<?php echo "<br><br>"; ?>
 <a href="login.php">logout	
 	<?php
 	echo "<br><br>";
-	if($_SESSION['uname']==='abcd123'){
-       echo "admin login successful <a href='user_list.php'>click to see userlist</a>";
-       sleep(3);
-       	header("Location:user_list.php");
-    }
-       // } else {
-       // 	header("Location:user_update.php");
-       // }
 ?>
 
 </body>

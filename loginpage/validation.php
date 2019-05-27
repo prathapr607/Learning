@@ -25,13 +25,15 @@
 	if( isset( $_POST["uname"] ) ){
 	$username=$_POST["uname"]; 
 	$password=$_POST["password"]; 
-
+    
 	
 	if(empty($username)){
-	 echo "username is not valid";
+    
 	}
 	if(empty($password)){
-	 echo "invalid password";
+	 
 	}
 	}
 ?>
+</body>
+</html>
