@@ -1,4 +1,4 @@
-<?php 
+	<?php 
  include 'connectdb.php';
 	if(isset($_POST['reg_name'])){
 		$username = $_POST['reg_name'];

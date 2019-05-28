@@ -24,8 +24,9 @@ session_start();
 
     $sql_insert = "INSERT INTO user(username, email, password) VALUES ('$username', '$email', '".md5($password)."')";
     $insert_query = mysqli_query($connection,$sql_insert);
-    if($insert_query){
+    if($insert_query) {
 		echo "inserted successful";
+    }
 	} else {
 		echo "not inserted";
 	}
@@ -39,7 +40,7 @@ session_start();
        $_SESSION['password']=$result['password'];
 	    header("Location:welcome.php");
 	}
-	 }
+	 
 	?>
 
 <?php
