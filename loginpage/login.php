@@ -103,7 +103,7 @@
 
          error=true;
         
-     }else {
+     }else {!
       
         document.getElementById("pass2_error").style.visibility="hidden";
 
@@ -113,9 +113,10 @@
           document.getElementById("pass2_error").innerHTML="password mismatch occur";
          error=true;
       }
-      if( error ){
+      if( !error ){
         event.preventDefault();
-      }else{
+      }
+      else{
         window.location.href = "login.php";
       }
 }

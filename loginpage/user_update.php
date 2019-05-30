@@ -96,7 +96,8 @@ session_start();
       }
       if( error ){
         event.preventDefault();
-      }else{
+      }
+      else{
         window.location.href = "login.php";
       }
 }
@@ -109,7 +110,7 @@ session_start();
 
          	include 'validation.php';
 	 	 if(!$connection){
-	     	echo "connection to db is failed";	
+	     	echo "connection to db is failed";	 	
 	     	return;
 	     }
     
