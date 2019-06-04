@@ -31,11 +31,7 @@ function keyfunction(e) {
       window.onbeforeunload = function() {
           return "Did you save your stuff?"
       }
-    window.onbeforeunload = function (e) {
-		e.preventDefault();
-		e.returnValue = 'Test';
-		return false;
-	}
+    
 
 
  //  var reallys = false;
