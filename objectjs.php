@@ -33,7 +33,7 @@
         },
     ];
     var k = '<tbody>'
-    for(i = 0;i < mainObj.length; i++){
+    for(i = 0; i< mainObj.length; i++){
         k+= '<tr>';
         k+= '<td>' + mainObj[i].name + '</td>';
         k+= '<td>' + mainObj[i].age + '</td>';
